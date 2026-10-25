@@ -162,3 +162,33 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+/**
+ * Dark Mode Toggle & Local Storage
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  
+  if (!themeToggleBtn || !themeIcon) return;
+
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    document.body.setAttribute('data-theme', 'dark');
+    themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+  }
+
+  themeToggleBtn.addEventListener('click', () => {
+    const isDark = document.body.getAttribute('data-theme') === 'dark';
+    
+    if (isDark) {
+      document.body.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+    } else {
+      document.body.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+    }
+  });
+});

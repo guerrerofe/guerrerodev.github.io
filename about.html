@@ -25,27 +25,30 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=5" rel="stylesheet">
 </head>
 
 <body class="about-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+<header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">GuerreroDev</h1>
       </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html" class="active">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+      <div class="d-flex align-items-center">
+        <button id="theme-toggle" class="theme-btn">
+          <i class="bi bi-sun-fill" id="theme-icon"></i>
+        </button>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -63,7 +66,7 @@
           
           <!-- About Text (Hecho más estrecho para dar espacio) -->
           <div class="col-lg-5 content">
-            <h3 class="mb-4">From gamer to developer.</h3>
+            <h3 class="mb-4">From gamer to developer</h3>
             <p style="text-align: justify;">
               Hey! I'm Juan Guerrero, and I've been an absolute video game geek since I was a kid. Growing up enjoying them so much naturally led me to study Video Game Engineering at ESAT here in my hometown, Valencia.
             </p>
