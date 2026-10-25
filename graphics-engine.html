@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Procedural Graphics Engine - GuerreroDev</title>
+  <meta name="description" content="A custom graphics rendering pipeline built in C++ and OpenGL featuring procedural terrain and particle systems.">
+  <meta name="keywords" content="C++, OpenGL, Graphics Programmer, Shaders, Procedural Generation, Portfolio">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">GuerreroDev</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Portfolio</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center" style="margin-top: 30px;">
+        <h1 class="mb-2 mb-lg-0">Procedural Graphics Engine</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="current">Graphics Engine</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Video Area -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/NTdqxBlc1K4" 
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Project Info Sidebar -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" style="background-color: #f4f4f4; padding: 30px; border-radius: 12px;">
+              <h3 style="margin-bottom: 20px; font-weight: 700;">Project Information</h3>
+              <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><strong>Role</strong>: Graphics Programmer</li>
+                <li><strong>Technology</strong>: C++, OpenGL</li>
+                <li><strong>Discipline</strong>: Engine & Graphics Programming</li>
+                <li><strong>Tools</strong>: GLSL Shaders, GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project Description & Tasks -->
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2 style="font-weight: 700; margin-bottom: 20px;">Building a Visual Pipeline from Scratch</h2>
+              <p style="text-align: justify;">
+                This project served as a comprehensive application of low-level graphics programming concepts, aiming to render a highly optimized, procedural landscape. Built entirely in C++ and OpenGL, the scene demonstrates real-time rendering techniques, memory efficiency, and complex mathematical generation.
+              </p>
+              
+              <h4 style="margin-top: 30px; font-weight: 600;">Systems Implemented</h4>
+              <ul>
+                <li><strong>Scene Management & Rendering:</strong> Architected the core rendering loop and scene graph for efficient draw calls and high frame rates.</li>
+                <li><strong>Procedural Terrain Generation:</strong> Deformed a dynamic terrain mesh using Perlin and Simplex Noise sampling directly within the shaders.</li>
+                <li><strong>Dynamic Water Simulation:</strong> Implemented a secondary mesh utilizing custom vertex movement and alpha blending (transparency) to simulate ocean waves.</li>
+                <li><strong>Shader Programming:</strong> Authored custom Vertex and Fragment shaders (GLSL) to handle dynamic lighting, coloring, and material properties.</li>
+                <li><strong>Particle Systems:</strong> Developed a custom particle emitter to add atmospheric depth and visual flair to the environment.</li>
+              </ul>
+
+              <h4 style="margin-top: 30px; font-weight: 600;">The Challenge & Learning</h4>
+              <p style="text-align: justify;">
+                While achieving a visually stunning and highly performant scene was a major technical victory, the most significant challenge of this project lay in its architecture and team logistics. Co-developed with two classmates over several months, coordinating a complex C++ codebase required strict version control discipline. Managing merges, resolving conflicts, and maintaining a clean structure via GitHub taught me the vital importance of software engineering standards and communication in long-term technical projects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background mt-5" style="border-top: none;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="copyright text-start mb-3 mb-md-0" style="font-size: 0.9rem; color: #555;">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Juan Guillermo Guerrero Ferrando</strong>. <span>All Rights Reserved</span></p>
+        <p class="mb-0">Designed by BootstrapMade</p>
+      </div>
+      <div class="social-links d-flex">
+        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/guerrerofe/" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
