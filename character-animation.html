@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Character Animation Pipeline - GuerreroDev</title>
+  <meta name="description" content="Technical Art demonstration focusing on skeletal retargeting and animation implementation in Unreal Engine 5.">
+  <meta name="keywords" content="Unreal Engine 5, Technical Art, Animation Retargeting, Rigging, Mixamo, Portfolio">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">GuerreroDev</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Portfolio</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center" style="margin-top: 30px;">
+        <h1 class="mb-2 mb-lg-0">Character Animation Pipeline</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="current">Animation Pipeline</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Video Area -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/zWTEYb-KQFw" 
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Project Info Sidebar -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" style="background-color: #f4f4f4; padding: 30px; border-radius: 12px;">
+              <h3 style="margin-bottom: 20px; font-weight: 700;">Project Information</h3>
+              <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><strong>Role</strong>: Technical Artist</li>
+                <li><strong>Engine</strong>: Unreal Engine 5</li>
+                <li><strong>Discipline</strong>: Animation & Rigging</li>
+                <li><strong>Tools</strong>: Mixamo, Skeletal Retargeting</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project Description & Tasks -->
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2 style="font-weight: 700; margin-bottom: 20px;">Mastering the Animation Pipeline</h2>
+              <p style="text-align: justify;">
+                This technical demonstration focuses on the core pipeline of character animation integration within Unreal Engine 5. Acting as a standalone Technical Art R&D project, the primary objective was to successfully import, retarget, and polish external skeletal meshes and animation data to achieve a seamless, fluid interactive system.
+              </p>
+              
+              <h4 style="margin-top: 30px; font-weight: 600;">Technical Implementation</h4>
+              <ul>
+                <li><strong>Skeletal Mesh Integration:</strong> Managed the import pipeline for character models and their underlying skeletal hierarchies.</li>
+                <li><strong>Animation Retargeting:</strong> Implemented IK Retargeting to transfer complex animation sequences from Mixamo rigs to target skeletons, ensuring proper bone mapping.</li>
+                <li><strong>Weight & Pose Adjustments:</strong> Fine-tuned the character's body proportions, joint constraints, and base poses to eliminate clipping and ensure fluidity across all movement states.</li>
+              </ul>
+
+              <h4 style="margin-top: 30px; font-weight: 600;">The Challenge & Learning</h4>
+              <p style="text-align: justify;">
+                Developed independently as part of my advanced Technical Art coursework, this project provided deep, hands-on experience with the engine's animation ecosystem. Bridging the gap between raw, external animation assets and in-engine playable mechanics required meticulous attention to anatomical behavior and skeletal structures. This process was highly rewarding and ultimately solidified my passion for Technical Art, an area I am actively striving to specialize in for my professional career.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background mt-5" style="border-top: none;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="copyright text-start mb-3 mb-md-0" style="font-size: 0.9rem; color: #555;">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Juan Guillermo Guerrero Ferrando</strong>. <span>All Rights Reserved</span></p>
+        <p class="mb-0">Designed by BootstrapMade</p>
+      </div>
+      <div class="social-links d-flex">
+        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/guerrerofe/" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
