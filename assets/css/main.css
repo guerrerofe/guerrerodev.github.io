@@ -1386,9 +1386,3 @@ section,
   right: 70px !important;
   margin: 0 !important;
 }
-
-@media (min-width: 992px) {
-  .isotope-container .portfolio-item:nth-child(10):last-child {
-    margin-left: 33.333333% !important;
-  }
-}
