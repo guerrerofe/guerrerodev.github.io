@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Juan Guerrero - Video Game Engineer</title>
   <meta name="description" content="Portfolio of Juan Guillermo Guerrero, Video Game Engineer and Technical Artist based in Valencia, Spain.">
-  <meta name="keywords" content="Video Game Engineer, Technical Artist, C++, Unreal Engine, Unity">
+  <meta name="keywords" content="Video Game Engineer, Technical Artist, C++, C, Unreal Engine, Unity">
 
   <link href="assets/img/favicon.png?v=2" rel="icon">
   <link href="assets/img/apple-touch-icon.png?v=2" rel="apple-touch-icon">
@@ -20,7 +20,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=5" rel="stylesheet">
+  
+  <link href="assets/css/main.css?v=7" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -37,7 +38,7 @@
         </button>
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="index.html" class="active">Portfolio</a></li>
             <li><a href="currently.html">Currently</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -65,6 +66,7 @@
                 <li data-filter=".filter-ue5">Unreal Engine 5</li>
                 <li data-filter=".filter-unity">Unity</li>
                 <li data-filter=".filter-graphics">Graphics & Tech Art</li>
+                <li data-filter=".filter-c">C / C++</li>
               </ul>
             </div>
           </div>
@@ -84,7 +86,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics filter-c">
               <div class="portfolio-content h-100">
                 <video src="assets/img/portfolio/graphics-engine-short.mp4" class="img-fluid" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 16/9; object-fit: cover;"></video>
                 <div class="portfolio-info">
@@ -162,6 +164,45 @@
               </div>
             </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ue5">
+              <div class="portfolio-content h-100">
+                <video src="assets/img/portfolio/colors-labyrinth-short.mp4" class="img-fluid" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 16/9; object-fit: cover;"></video>
+                <div class="portfolio-info">
+                  <h4>Colors Labyrinth</h4>
+                  <p>FPS Puzzle | Unreal Engine 5</p>
+                  <div>
+                    <a href="colors-labyrinth.html" title="View Project Details" class="details-link"><i class="bi bi-arrow-right-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-c">
+              <div class="portfolio-content h-100">
+                <video src="assets/img/portfolio/space-invaders-short.mp4" class="img-fluid" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 16/9; object-fit: cover;"></video>
+                <div class="portfolio-info">
+                  <h4>Space Invaders Clone</h4>
+                  <p>Arcade Shooter | C</p>
+                  <div>
+                    <a href="space-invaders.html" title="View Project Details" class="details-link"><i class="bi bi-arrow-right-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-c">
+              <div class="portfolio-content h-100">
+                <video src="assets/img/portfolio/asteroids-short.mp4" class="img-fluid" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 16/9; object-fit: cover;"></video>
+                <div class="portfolio-info">
+                  <h4>Asteroids Clone</h4>
+                  <p>Arcade Physics Shooter | C</p>
+                  <div>
+                    <a href="asteroids.html" title="View Project Details" class="details-link"><i class="bi bi-arrow-right-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -169,15 +210,15 @@
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <div class="copyright text-center">
+  <footer id="footer" class="footer light-background mt-5" style="border-top: none;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="copyright text-start mb-3 mb-md-0" style="font-size: 0.9rem; color: #555;">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Juan Guillermo Guerrero Ferrando</strong>. <span>All Rights Reserved</span></p>
         <p class="mb-0">Designed by BootstrapMade</p>
       </div>
-      <div class="social-links d-flex justify-content-center mt-3">
-        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.linkedin.com/in/guerrerofe/" target="_blank" class="mx-2"><i class="bi bi-linkedin"></i></a>
+      <div class="social-links d-flex">
+        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/guerrerofe/" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </footer>

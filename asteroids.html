@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Asteroids (C) - GuerreroDev</title>
+  <meta name="description" content="A robust Asteroids clone developed in C, featuring linked list entity management and data persistence.">
+  <meta name="keywords" content="C Programming, Linked Lists, Asteroids, Video Game Engineer">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png?v=2" rel="icon">
+  <link href="assets/img/apple-touch-icon.png?v=2" rel="apple-touch-icon"> 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=7" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">GuerreroDev</h1>
+      </a>
+      <div class="d-flex align-items-center">
+        <button id="theme-toggle" class="theme-btn">
+          <i class="bi bi-sun-fill" id="theme-icon"></i>
+        </button>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="currently.html">Currently</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center" style="margin-top: 30px;">
+        <h1 class="mb-2 mb-lg-0">Asteroids Clone (C)</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="current">Asteroids</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Video Reel Area -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/7d35xP8bmMg" 
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Project Info Sidebar -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" style="background-color: #f4f4f4; padding: 30px; border-radius: 12px;">
+              <h3 style="margin-bottom: 20px; font-weight: 700;">Project Information</h3>
+              <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><strong>Role</strong>: Solo Developer</li>
+                <li><strong>Language</strong>: C</li>
+                <li><strong>Genre</strong>: Arcade / Physics Shooter</li>
+                <li><strong>Tools</strong>: Visual Studio, ESAT Framework</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project Description & Tasks -->
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2 style="font-weight: 700; margin-bottom: 20px;">Memory Management & Vector Physics</h2>
+              <p style="text-align: justify;">
+                This project represents a significant technical leap in my early C programming journey. Moving beyond static arrays, I engineered this <em>Asteroids</em> clone to utilize dynamic memory allocation and vector mathematics, resulting in a robust, physics-driven arcade experience complete with a functional user account system.
+              </p>
+              
+              <h4 style="margin-top: 30px; font-weight: 600;">Technical Implementation</h4>
+              <ul>
+                <li><strong>Linked List Architecture:</strong> Managed the dynamic lifecycle of the asteroid swarm using custom singly linked lists. When large asteroids are destroyed, the logic securely frees the parent node and allocates two new medium nodes into the list structure.</li>
+                <li><strong>Vector Math & Physics:</strong> Programmed progressive thrust, friction, and rotation by calculating vector magnitudes and normalizing 2D directional vectors for both the player ship and the procedural asteroid trajectories.</li>
+                <li><strong>Circular Collision Detection:</strong> Implemented mathematical radius-based collision detection algorithms to accurately determine intersections between projectiles, the player, and irregularly shaped asteroids.</li>
+                <li><strong>Data Persistence:</strong> Engineered a complete User Management state machine featuring Sign-Up and Log-In menus, safely serializing and deserializing struct data into local .dat files to track high scores and player profiles across sessions.</li>
+              </ul>
+
+              <h4 style="margin-top: 30px; font-weight: 600;">The Challenge & Learning</h4>
+              <p style="text-align: justify;">
+                While managing dynamic memory for the linked lists was complex, the most demanding and tedious hurdle proved to be architecting the custom User Management system. Handling data persistence through raw .dat files meant engineering a reliable pipeline to serialize and deserialize player profiles, passwords, and high scores without data corruption. Navigating these low-level file I/O operations alongside the real-time game loop tested my patience, but ultimately solidified my understanding of data structures and scalable architecture in non-engine environments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background mt-5" style="border-top: none;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="copyright text-start mb-3 mb-md-0" style="font-size: 0.9rem; color: #555;">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Juan Guillermo Guerrero Ferrando</strong>. <span>All Rights Reserved</span></p>
+        <p class="mb-0">Designed by BootstrapMade</p>
+      </div>
+      <div class="social-links d-flex">
+        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/guerrerofe/" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

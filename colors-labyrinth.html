@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Colors Labyrinth - GuerreroDev</title>
+  <meta name="description" content="Colors Labyrinth: A Blueprint-based FPS puzzle game developed in Unreal Engine 5 by Juan Guillermo Guerrero.">
+  <meta name="keywords" content="Unreal Engine 5, Blueprints, FPS, Puzzle, Video Game Engineer">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png?v=2" rel="icon">
+  <link href="assets/img/apple-touch-icon.png?v=2" rel="apple-touch-icon"> 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=7" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">GuerreroDev</h1>
+      </a>
+      <div class="d-flex align-items-center">
+        <button id="theme-toggle" class="theme-btn">
+          <i class="bi bi-sun-fill" id="theme-icon"></i>
+        </button>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="currently.html">Currently</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center" style="margin-top: 30px;">
+        <h1 class="mb-2 mb-lg-0">Colors Labyrinth</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="current">Colors Labyrinth</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Video Reel Area -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/TU_ID_DE_YOUTUBE" 
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Project Info Sidebar -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" style="background-color: #f4f4f4; padding: 30px; border-radius: 12px;">
+              <h3 style="margin-bottom: 20px; font-weight: 700;">Project Information</h3>
+              <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><strong>Role</strong>: Solo Developer</li>
+                <li><strong>Engine</strong>: Unreal Engine 5</li>
+                <li><strong>Genre</strong>: First-Person Shooter / Puzzle</li>
+                <li><strong>Tools</strong>: Blueprint Visual Scripting</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project Description & Tasks -->
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2 style="font-weight: 700; margin-bottom: 20px;">Dynamic Color-Matching FPS</h2>
+              <p style="text-align: justify;">
+                <em>Colors Labyrinth</em> is a dynamic First-Person Shooter and puzzle-platformer hybrid that served as my foundational deep dive into Unreal Engine 5. The core loop requires players to navigate a maze where environmental interaction is entirely driven by a color-matching mechanic.
+              </p>
+              
+              <h4 style="margin-top: 30px; font-weight: 600;">Technical Implementation</h4>
+              <ul>
+                <li><strong>Blueprint Architecture:</strong> Programmed the entire gameplay loop, character controller, and environmental logic exclusively using UE5 Blueprints.</li>
+                <li><strong>Dynamic State Machine:</strong> Implemented an environmental trigger system where stepping on specific colored platforms dynamically alters the weapon's elemental state and projectile behavior.</li>
+                <li><strong>Actor Communication:</strong> Built interaction logic gates ensuring doors only trigger and enemy hitboxes only register damage when hit by projectiles matching their designated color tags.</li>
+              </ul>
+
+              <h4 style="margin-top: 30px; font-weight: 600;">The Challenge & Learning</h4>
+              <p style="text-align: justify;">
+                As my introduction to Unreal Engine, the most significant hurdle was designing the weapon's state management system. Transitioning colors seamlessly and accurately broadcasting that current state to various interactable actors (doors, targets, enemies) across the map required extensive troubleshooting. Overcoming this solidified my understanding of Actor communication, casting, and event-driven architecture, laying a strong foundation for my subsequent C++ engineering work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background mt-5" style="border-top: none;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="padding-top: 40px; padding-bottom: 40px;">
+      <div class="copyright text-start mb-3 mb-md-0" style="font-size: 0.9rem; color: #555;">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Juan Guillermo Guerrero Ferrando</strong>. <span>All Rights Reserved</span></p>
+        <p class="mb-0">Designed by BootstrapMade</p>
+      </div>
+      <div class="social-links d-flex">
+        <a href="https://twitter.com/jowyguerrero" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/guerrerofe/" target="_blank" class="mx-2 text-dark" style="background: #f4f4f4; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
